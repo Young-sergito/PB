@@ -146,8 +146,8 @@ public class FinalTaskUF1 {
             System.out.println(ERF);
         }
         else{
-            System.out.printf("|%12s|%12s|%12s|%12s|%12s|%n","id","edat","tipusVenda","cost","telefon");
-            System.out.printf("|%12d|%12d|%12s|%12d|%12d|%n",id,edat,tv,cost,telefon);
+            System.out.printf("%12s|%12s|%12s|%12s|%12s|%n","id","edat","tipusVenda","cost","telefon");
+            System.out.printf("%12d|%12d|%12s|%12d|%12d|%n",id,edat,tv,cost,telefon);
             
         }
     }
