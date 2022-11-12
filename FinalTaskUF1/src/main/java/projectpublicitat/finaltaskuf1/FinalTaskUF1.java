@@ -24,17 +24,18 @@ public class FinalTaskUF1 {
     private final static int MAXTE = 999999999;
     private final static int MINTE = 111111111;
     private final static int ENDCOUNT = 3;
-    private final static String MSG_1 = "inserta un nombre entre 111 i 999 inclsosos: ";
-    private final static String MSG_2 = "inserta un nombre entre 14 i 120 inclsosos: ";
+    private final static String MSG_1 = "id: ";
+    private final static String MSG_2 = "edat: ";
     private final static String MSG_3 = "venda lliure (0)\n" + "pensionista (1)\n" + "carnet jove (2)\n" + "soci (3)";
-    private final static String MSG_4 = "inserta un nombre entre 0 i 1000 inclsosos: ";
-    private final static String MSG_5 = "inserta un Telefon de 9 xifres: ";
+    private final static String MSG_4 = "cost: ";
+    private final static String MSG_5 = "telèfon: ";
     private final static String ER = "error en dades!";
     private final static String ERF = "Programa finalitzat per error en dades";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int id = 0, edat = 0, tipusVenda = 0, cost = 0, telefon = 0, count = 0;
+        String tv = "";
         boolean isInteger = false;
         do {
             System.out.println(MSG_1);
@@ -85,12 +86,16 @@ public class FinalTaskUF1 {
                     }
                     switch (tipusVenda) {
                         case 0:
+                            tv = "venda lliure";
                             break;
                         case 1:
+                            tv = "pensionista";
                             break;
                         case 2:
+                            tv = "carnet jove";
                             break;
                         case 3:
+                            tv = "soci";
                             break;
                     }
                 } else {
@@ -142,7 +147,7 @@ public class FinalTaskUF1 {
         }
         else{
             System.out.printf("|%12s|%12s|%12s|%12s|%12s|%n","id","edat","tipusVenda","cost","telefon");
-            System.out.printf("%12d|%12d|%12s|%12d|%12d|%n",id,edat,tipusVenda,cost,telefon);
+            System.out.printf("|%12d|%12d|%12s|%12d|%12d|%n",id,edat,tv,cost,telefon);
             
         }
     }
