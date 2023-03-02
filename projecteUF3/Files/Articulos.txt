@@ -1,0 +1,3 @@
+       codi ,        nom ,      tipus ,  quantitat ,        preu 
+      ART001,       vasos,     cristal,          25,   10,000000 
+
